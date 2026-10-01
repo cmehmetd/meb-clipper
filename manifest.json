@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Sayfayı Markdown İndir",
+  "version": "1.0.0",
+  "description": "Açık web sayfasını cihazınızda Markdown'a dönüştürün, düzenleyin ve indirin.",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "action": {
+    "default_title": "Markdown olarak indir",
+    "default_popup": "popup.html"
+  }
+}
