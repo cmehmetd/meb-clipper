@@ -1,0 +1,43 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f6f2e9;
+  color: #1b2a27;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 390px; }
+
+.popup-shell { padding: 22px; }
+
+.hero { display: flex; align-items: center; gap: 12px; }
+.mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: #174c42; color: #fff8ed; font-size: 25px; font-weight: 800; }
+.eyebrow { margin: 0 0 3px; color: #a4482e; font-size: 10px; font-weight: 800; letter-spacing: .13em; }
+h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 23px; line-height: 1.05; }
+.intro { margin: 16px 0; color: #53645e; font-size: 13px; line-height: 1.5; }
+
+.panel { border: 1px solid #ded5c7; border-radius: 12px; background: #fffdf8; padding: 13px; }
+.field-label, .editor-header label { display: block; margin-bottom: 7px; font-size: 11px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+.filename-row { display: flex; align-items: center; gap: 7px; }
+input[type="text"], textarea { width: 100%; border: 1px solid #cfc5b5; border-radius: 8px; background: #fffefa; color: #1b2a27; font: inherit; }
+input[type="text"] { padding: 9px 10px; font-size: 13px; }
+.filename-row span { color: #687771; font-size: 12px; }
+.checkbox-row { display: flex; align-items: center; gap: 8px; margin-top: 11px; color: #40524c; font-size: 12px; cursor: pointer; }
+input[type="checkbox"] { accent-color: #174c42; }
+
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px 0; }
+.button { min-height: 37px; border: 0; border-radius: 8px; padding: 9px; font: inherit; font-size: 12px; font-weight: 750; cursor: pointer; }
+.primary { background: #174c42; color: #fff; }
+.secondary { background: #e7b56e; color: #1b2a27; }
+.button:hover:not(:disabled) { filter: brightness(1.06); }
+.button:disabled { cursor: not-allowed; opacity: .48; }
+
+.editor-section { margin-top: 2px; }
+.editor-header { display: flex; justify-content: space-between; align-items: baseline; }
+.editor-header output { color: #687771; font-size: 11px; }
+textarea { display: block; min-height: 235px; resize: vertical; padding: 11px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 12px; line-height: 1.5; }
+.status { min-height: 18px; margin: 10px 1px 0; color: #687771; font-size: 11px; line-height: 1.4; }
+.status.error { color: #a4482e; }
+
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #e7b56e; outline-offset: 2px; }
