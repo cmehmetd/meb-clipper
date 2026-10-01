@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meb Clipper</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup-shell">
+      <header class="hero">
+        <div class="mark" aria-hidden="true">↓</div>
+        <div>
+          <p class="eyebrow">YEREL &amp; GİZLİ</p>
+          <h1>Meb Clipper</h1>
+        </div>
+      </header>
+
+      <p class="intro">Açık sekmeyi Markdown'a dönüştürün, düzenleyin ve indirin.</p>
+
+      <section class="panel controls" aria-label="Dönüştürme seçenekleri">
+        <label class="field-label" for="filename">Dosya adı</label>
+        <div class="filename-row">
+          <input id="filename" type="text" value="sayfa.md" autocomplete="off" spellcheck="false" />
+          <span>.md</span>
+        </div>
+        <label class="checkbox-row" for="includeImages">
+          <input id="includeImages" type="checkbox" checked />
+          <span>Görsel bağlantılarını ekle</span>
+        </label>
+      </section>
+
+      <div class="actions">
+        <button id="convert" class="button primary" type="button">Sayfayı dönüştür</button>
+        <button id="download" class="button secondary" type="button" disabled>Markdown indir</button>
+      </div>
+
+      <section class="editor-section" aria-label="Markdown düzenleyicisi">
+        <div class="editor-header">
+          <label for="markdown">Düzenle</label>
+          <output id="wordCount" for="markdown">Henüz içerik yok</output>
+        </div>
+        <textarea id="markdown" placeholder="Dönüştürülen Markdown burada görünür. İndirmeden önce özgürce düzenleyebilirsiniz." spellcheck="true"></textarea>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite">Hiçbir veri gönderilmez; dönüştürme yalnızca bu tarayıcıda yapılır.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
